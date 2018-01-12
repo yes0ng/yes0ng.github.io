@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
+baseurl: "/"
+url: "https://yes0ng.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
@@ -27,7 +27,7 @@ theme_settings:
   facebook:
   flickr:
   gitlab:
-  github: "sylhare"
+  github: "yes0ng"
   google_plus:
   instagram:
   keybase:

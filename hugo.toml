@@ -1,0 +1,4 @@
+baseURL = 'https://yes0ng.github.io/'
+locale = 'en-us'
+title = 'My New Hugo Project'
+theme = 'hugo-blog-awesome'

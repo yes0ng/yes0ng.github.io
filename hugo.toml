@@ -1,4 +1,110 @@
 baseURL = 'https://yes0ng.github.io/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'yes0ng'
 theme = 'hugo-blog-awesome'
+
+enableEmoji = true
+ignoreErrors = ["additional-script-loading-error"]
+
+defaultContentLanguage = "ko"
+
+[services]
+  [services.googleAnalytics]
+    id = ''
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+    ordered = false
+
+[Languages.ko]
+  languageName = "한국어"
+  languageCode = "ko"
+  contentDir = "content/ko"
+  weight = 1
+
+  [Languages.ko.menu]
+  [[Languages.ko.menu.main]]
+    pageRef = "/"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[Languages.ko.menu.main]]
+    pageRef = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+  [[Languages.ko.menu.main]]
+    pageRef = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+  [Languages.ko.params]
+    sitename = "yes0ng"
+    defaultColor = "auto"
+    description = "yes0ng의 블로그"
+    mainSections = ['posts']
+    toc = true
+    tocOpen = false
+    goToTop = true
+    dateFormat = "2006년 01월 02일"
+    rssFeedDescription = "summary"
+
+  [Languages.ko.params.author]
+    avatar = "profile.jpeg"
+    name = "yes0ng"
+    intro = "yes0ng"
+    description = "🩶"
+
+[Languages.en]
+  languageName = "English"
+  languageCode = "en"
+  contentDir = "content/en"
+  weight = 2
+
+  [Languages.en.menu]
+  [[Languages.en.menu.main]]
+    pageRef = "/"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[Languages.en.menu.main]]
+    pageRef = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+  [[Languages.en.menu.main]]
+    pageRef = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+  [Languages.en.params]
+    sitename = "yes0ng"
+    defaultColor = "auto"
+    description = "yes0ng's blog"
+    mainSections = ['posts']
+    toc = true
+    tocOpen = false
+    goToTop = true
+    dateFormat = "Jan 2, 2006"
+    rssFeedDescription = "summary"
+
+  [Languages.en.params.author]
+    avatar = "profile.jpeg"
+    name = "yes0ng"
+    intro = "yes0ng"
+    description = "🩶"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/yes0ng"
+
+[[params.socialIcons]]
+  name = "rss"
+  url = "/index.xml"
